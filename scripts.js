@@ -1,20 +1,18 @@
-window = {
-
-    engine: {
-        maker: "ford",
-        headGasket: {
-            pots: [
-                "piston1",
-                "piston2"
-            ]
-        }
-    },
-
-    runExpression: {
-
-        a: 10,
-        add: {
-            engine: "string engine"
-        }
+var engine = {
+    maker: "ford",
+    headGasket: {
+        pots: [
+            "piston1",
+            "piston2"
+        ]
     }
+}
+
+function runExpression() {
+
+    function add() {
+        test;
+    }
+
+    add();
 }
