@@ -1,25 +1,21 @@
-var car = {
-    make: "Volvo",
-    speed: 160,
-    engine: {
-        size: 2.0,
-        make: "bmw",
-        fuel: "petrol",
-        pistons: [{
-            maker: "piston1"
-        }, {
-            maker: "piston2"
-        }],
-        drive: function () { return "drive"; }
+var engine = {
+    maker: "ford",
+    headGasket: {
+        pots: [
+            "piston1",
+            "piston2"
+        ]
     }
 }
 
-var array = [
-    "string",
-    100,
-    ["embed", 200],
-    {car: "ford"},
-    function () { return "drive"; }
-];
+function runExpression()
+{
+    var a = 10;
 
-console.log(car.make);
+    function add ( ){
+        var engine = "string engine";
+       console.log(engine);
+    }
+
+    add();
+}
