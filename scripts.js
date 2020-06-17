@@ -13,6 +13,5 @@ function runExpression() {
     function add() {
         test;
     }
-
     add();
 }
