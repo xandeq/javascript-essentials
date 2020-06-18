@@ -1,17 +1,27 @@
-var engine = {
-    maker: "ford",
-    headGasket: {
-        pots: [
-            "piston1",
-            "piston2"
-        ]
+//console.log(this);
+
+var object = {
+    prop: this,
+    embed :{
+        embed: true,
+        method: function() { return this }
     }
 }
 
-function runExpression() {
+var array = [
+    this,
+    function() { return this }
+]
 
-    function add() {
-        test;
-    }
-    add();
+function global() {
+
+    console.log('from global', this);
+
+    function sub() { console.log ( 'from sub', this) }
+
+    sub();
 }
+
+global.call(object);
+
+new global();
