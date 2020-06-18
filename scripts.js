@@ -25,3 +25,5 @@ function global() {
 global.call(object);
 
 new global();
+
+// novo branch
