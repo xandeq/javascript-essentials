@@ -1,29 +1,13 @@
-//console.log(this);
+function Apple(x, y, color, score) {
 
-var object = {
-    prop: this,
-    embed :{
-        embed: true,
-        method: function() { return this }
-    }
+    this.x = x;
+    this.y = y;
+    this.color = color;
+    this.score = score;
+
+    return this;
 }
 
-var array = [
-    this,
-    function() { return this }
-]
-
-function global() {
-
-    console.log('from global', this);
-
-    function sub() { console.log ( 'from sub', this) }
-
-    sub();
-}
-
-global.call(object);
-
-new global();
-
-// novo branch
+var apple1 = new Apple(1,2,"red",200);
+var apple2 = new Apple(1,2,"blue",200);
+var apple3 = new Apple(1,2,"green",200);
